@@ -14,6 +14,19 @@ workflow back to Brewdio.
 The plugin only manages files named `brewdio_<recipe-id>.yaml`. It does not modify
 recipes created directly in CraftBeerPi.
 
+## Relationship to Brewdio
+
+This repository contains only the CraftBeerPi 4 plugin: recipe conversion,
+synchronization, batch-start handling, configuration, and plugin tests.
+
+The main [Brewdio repository](https://github.com/sammynorway/brewdio) contains the
+application, inventory calculations, authentication, integration-key management,
+Recipe API, and Batch API. The two projects are kept separate so the plugin can be
+installed and released without bundling it into the Brewdio application.
+
+Compatible Brewdio server API support is required for this plugin to synchronize
+recipes and create inventory-aware batches.
+
 ## Requirements
 
 - CraftBeerPi 4
