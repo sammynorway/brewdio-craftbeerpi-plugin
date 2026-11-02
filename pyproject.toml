@@ -8,6 +8,12 @@ version = "0.2.0"
 description = "Synchronize Brewdio recipes into CraftBeerPi 4"
 readme = "README.md"
 license = { file = "LICENSE" }
+authors = [
+  { name = "Anders H. Samuelsen" },
+]
+maintainers = [
+  { name = "Anders H. Samuelsen" },
+]
 requires-python = ">=3.10"
 dependencies = [
   "aiohttp>=3.8",
